@@ -1,8 +1,8 @@
 from math import cos,sin,cosh,sinh
 
 import functools
-@functools.lru_cache(maxsize=128)
 from math import factorial
+@functools.lru_cache(maxsize=128)
 def ck(t,k,N=20):
     sk=lambda n:t/((2*n+k+1)*(2*n+k+2))*(1-sk(n+1)) if n<N else 0
     return (1-sk(0))/factorial(k)
