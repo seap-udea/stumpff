@@ -3,13 +3,18 @@
 
 Computing the value of the [Stumpff
 series](https://en.wikipedia.org/wiki/Stumpff_function) is important
-in celestial mechanics.  Altough most the series might be expressed in
-terms of trignometric functions, singular points make hard to compute
-those function.
+in celestial mechanics.  Altough most series might be expressed in
+terms of trignometric functions, several singular points way too hard
+to create a general function to compute them.
 
-Here we provide a minimalistic python version of the stumpff series.
+In this package we provide a minimalistic python version of the
+stumpff series.
 
-To test just run:
+The function is able to compute the Stumpff series in the same time as
+a regular trigonometric function, which is really important for
+efficient computations in celestial mechanics.
+
+To test the function just run:
 
 ```
   make
@@ -25,3 +30,10 @@ series please write to
 If you use it please mention this repo.
 
 Happy Stumpff!
+
+Acknowledgements
+----------------
+
+Thanks to [Juan Andres Pasos Rua](mailto:japasosr@unal.edu.co) for
+suggesting me to use functools to "cache" the function and speed-up it
+by a factor of ~20.
