@@ -2,7 +2,6 @@ from math import cos,sin,cosh,sinh
 
 import functools
 from math import factorial
-
 @functools.lru_cache(maxsize=128)
 def ck(t,k,N=1,delta=1e-15):
     while abs(t**N/factorial(2*N+k+2))>delta:N+=5

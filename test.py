@@ -4,13 +4,12 @@ from stumpff import *
 #######################################################################
 print("Computing stumpff series across two orders of magnitude...")
 #######################################################################
-errors=[]
-delta=1e-14
-
 #Range to explore
 from numpy import log10,logspace,linspace,hstack
 trange1=logspace(-5,0,10)
 trange2=linspace(0,100,200)
+
+errors=[]
 for t in hstack((-trange2,-trange1,trange1,trange2)):
     #Analytical values
     c0,c1,c2,c3=ck_analytic(t)
