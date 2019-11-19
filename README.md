@@ -16,8 +16,9 @@ series](https://github.com/seap-udea/stumpff/blob/master/stumpff.py).
 The routine might be easily implemented in any common language.
 
 The function is able to compute the precise value of the any Stumpff
-series and for values of the independent variable across four orders
-of magnitude, in the same time as a regular trigonometric function.
+series and for values of the independent variable across 8 orders of
+magnitude, in the same time as a the trigonometric function in the
+`math` library and twice faster than those in the `NumPy` library.
 
 This improvement is really important for efficient computations in
 celestial mechanics.
